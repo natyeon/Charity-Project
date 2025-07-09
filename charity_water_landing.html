@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity: Water</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100%;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1500x900') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: white;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .content {
+      position: relative;
+      text-align: center;
+      max-width: 700px;
+      padding: 20px;
+    }
+
+    .content h1 {
+      font-size: 3em;
+      line-height: 1.2em;
+    }
+
+    .content h1 .blue {
+      color: #00b4d8;
+    }
+
+    .content p {
+      font-size: 1.1em;
+      margin: 20px 0 40px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .btn-subscribe {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: black;
+    }
+
+    .btn-donate {
+      background-color: #f9c846;
+      color: black;
+      font-weight: bold;
+    }
+
+    .sign-in {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 1em;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="overlay"></div>
+    <a href="#" class="sign-in">Sign In</a>
+    <div class="content">
+      <h1>Everyone needs <span class="blue">water</span>. Not everyone has it.</h1>
+      <p>Your donation helps fund life-changing water solutions — 100% of public donations going directly to fund clean water.</p>
+      <div class="buttons">
+        <button class="btn btn-subscribe">Subscribe</button>
+        <button class="btn btn-donate">DONATE NOW</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
